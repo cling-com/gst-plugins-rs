@@ -37,6 +37,7 @@ option('rtp', type: 'feature', value: 'auto', description: 'Build rtp plugin')
 option('webrtc', type: 'feature', value: 'auto', yield: true, description: 'Build webrtc plugin')
 option('webrtchttp', type: 'feature', value: 'auto', description: 'Build webrtchttp plugin')
 option('quinn', type: 'feature', value: 'auto', description: 'Build quinn plugin')
+option('remotecontrol', type: 'feature', value: 'auto', description: 'Build remotecontrol plugin')
 
 # text
 option('textahead', type: 'feature', value: 'auto', description: 'Build textahead plugin')

@@ -37,6 +37,7 @@ members = [
     "net/webrtc/protocol",
     "net/webrtc/signalling",
     "net/quinn",
+    "net/remotecontrol",
 
     "text/ahead",
     "text/json",
