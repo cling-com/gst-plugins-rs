@@ -208,7 +208,6 @@ plugins = {
   'gopbuffer': {'library': 'libgstgopbuffer'},
   'quinn': {'library': 'libgstquinn'},
   'speechmatics': {'library': 'libgstspeechmatics'},
-  'remotecontrol': {'library': 'libgstremotecontrol'},
 }
 
 # Won't build on platforms where it bundles the sources because of:

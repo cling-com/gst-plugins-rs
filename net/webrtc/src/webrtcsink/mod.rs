@@ -40,6 +40,7 @@ mod homegrown_cc;
 
 mod imp;
 mod pad;
+mod remotecontrol;
 
 glib::wrapper! {
     pub struct BaseWebRTCSink(ObjectSubclass<imp::BaseWebRTCSink>) @extends gst::Bin, gst::Element, gst::Object, @implements gst::ChildProxy, gst_video::Navigation;

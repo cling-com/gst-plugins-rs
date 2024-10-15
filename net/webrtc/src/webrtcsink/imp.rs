@@ -3,6 +3,7 @@
 use crate::utils::{
     cleanup_codec_caps, has_raw_caps, make_element, Codec, Codecs, NavigationEvent,
 };
+use crate::webrtcsink::remotecontrol::handle_remotecontrol_event;
 use anyhow::Context;
 use gst::glib;
 use gst::prelude::*;
@@ -585,6 +586,8 @@ fn handle_control_event(
     };
 
     gst::log!(CAT, obj = sink, "Processing control event: {:?}", event);
+
+    handle_remotecontrol_event(event.clone());
 
     let mut ret = false;
 
